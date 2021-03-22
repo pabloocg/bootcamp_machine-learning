@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 
 def plot_(lm, x, y):
-    Y_model1 = lm.predict_(Xpill)
+    Y_model1 = lm.predict_(x)
 
-    plt.plot(Xpill, Y_model1, '--r', color='g')
-    plt.scatter(Xpill, Yscore, color='b', s=30, label='Strue(pills)')
-    plt.scatter(Xpill, Y_model1, color='g', s=20, label='Spredict(pills)')
+    plt.plot(x, Y_model1, '--r', color='g')
+    plt.scatter(x, y, color='b', s=30, label='Strue(pills)')
+    plt.scatter(x, Y_model1, color='g', s=20, label='Spredict(pills)')
     plt.xlabel('Quantity of blue pill (in micrograms)')
     plt.ylabel('Space driving score')
     plt.grid(True)
